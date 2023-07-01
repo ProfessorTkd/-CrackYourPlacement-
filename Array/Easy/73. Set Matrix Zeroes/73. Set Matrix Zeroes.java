@@ -1,4 +1,6 @@
 //Optimized
+// TC: O(2*n*m)
+// SC: O(1)
 class Solution {
     public void setZeroes(int[][] matrix) {
         int col0=1;
