@@ -52,7 +52,8 @@ class Solution {
         return res;
         Arrays.sort(nums);
         for(int i=0; i<nums.length-3; i++){
-            if(i==0 ||(i>0 && nums[i]!=nums[i-1] && i<nums.length-3) ){ // shift i , becoz we have to ignore duplicates
+            if(i==0 ||(i>0 && nums[i]!=nums[i-1] && i<nums.length-3) ){ 
+                // shift i , becoz we have to ignore duplicates
                 for(int j=i+1;j<nums.length-2; j++){
                     if(j == i+1 || (j > i+1 && nums[j] != nums[j-1] && j<nums.length-2 )){    
                     int lo = j+1;
