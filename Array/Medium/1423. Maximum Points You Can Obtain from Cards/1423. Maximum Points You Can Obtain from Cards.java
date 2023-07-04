@@ -35,6 +35,8 @@
     }
 
     // Optimal Solution Accepted
+// TC: o(k)
+// SC: 0(1)
     class Solution {
         public int maxScore(int[] cardPoints, int k) {
             int sum = 0, n = cardPoints.length;
