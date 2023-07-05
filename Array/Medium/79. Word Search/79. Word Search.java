@@ -1,4 +1,5 @@
  // DFS
+// Time Complexity - O(M * N * 4^L) and Space Complexity - O(L), where M*N - board size, L - Word length.
 class Solution {
         public boolean exist(char[][] board, String word) {
             for (int i = 0; i < board.length; i++)
