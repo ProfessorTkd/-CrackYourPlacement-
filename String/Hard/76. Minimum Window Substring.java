@@ -6,7 +6,6 @@ class Solution {
         for(char cur : t.toCharArray()){
             map[cur]++;
         }
-        
         int countAllCharInT = 0;
         int left = 0, n = arr.length, right = 0;
         int minLen = Integer.MAX_VALUE;
@@ -18,7 +17,6 @@ class Solution {
             if(0 <= map[arr[right]]){
                 countAllCharInT++;         
             }
-            
             //Shrink the window if current window contains all the char in t
             while(countAllCharInT == t.length()){
                 //Update the minLen
@@ -26,7 +24,6 @@ class Solution {
                     minLen = right - left + 1;
                     minLenStr = s.substring(left, right + 1);
                 }
-                
                 //Shrink the window
                 map[arr[left]]++;
                 if(0 < map[arr[left]]){
@@ -34,10 +31,8 @@ class Solution {
                 }
                 left++;
             }
-            
             right++;
         }
-        
         return minLenStr;
     }
 }
