@@ -1,5 +1,6 @@
 class Solution {
-    String[] ones = {"" , "One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
+    String[] ones = {"" , "One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten",
+    "Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
         
     String[] tens = {"","Ten","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
         
@@ -7,7 +8,6 @@ class Solution {
     int million = 1000000;
     int thousand = 1000;
     int hundred = 100;
-    
     public String numberToWords(int n)
     {
         if(n == 0)
@@ -15,7 +15,6 @@ class Solution {
         
         return backtrack(n).trim();
     }
-    
     private String backtrack(int n)
     {
         StringBuilder sb = new StringBuilder();
