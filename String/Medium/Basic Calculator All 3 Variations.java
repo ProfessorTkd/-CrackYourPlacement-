@@ -39,7 +39,7 @@ class Solution {        // 3 + 2 * 5
             if (Character.isDigit(c)) {
                 tmp = tmp*10 + c - '0';
             } else if (c != ' ') {
-				//process the numerical value of string so far; based on what 'op' we have before it
+	//process the numerical value of string so far; based on what 'op' we have before it
                 num = cal(num, tmp, op);
                 if (c == '+' || c == '-') {
                     res += num;
@@ -79,7 +79,7 @@ class Solution {
             } else if (c == ')') {
                 break;
             } else if (c != ' ') {
-                //process the numerical value of string so far; based on what 'op' we have before it
+ //process the numerical value of string so far; based on what 'op' we have before it
                 num = cal(num, tmp, op);
                 if (c == '+' || c == '-') {
                     result += num;
